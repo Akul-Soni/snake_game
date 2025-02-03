@@ -9,6 +9,7 @@ screen.tracer(0)
 screen.setup(width = 600, height = 600)
 screen.bgcolor("#78996A")
 screen.title("🐍🐍 Snake Game 🐍🐍")
+screen.bgpic("./images/ss3.gif")
 
 
 food = Food()
@@ -47,7 +48,7 @@ while game_is_on:
 
 
     #Collision with walls
-    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
+    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 270 or snake.head.ycor() < -290:
         scoreboard.reset()
         snake.reset()
 
