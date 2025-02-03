@@ -4,18 +4,21 @@ from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 
+# Basic Settiings
+
 screen = Screen()
 screen.tracer(0)
 screen.setup(width = 600, height = 600)
 screen.bgcolor("#78996A")
 screen.title("🐍🐍 Snake Game 🐍🐍")
-screen.bgpic("./images/ss3.gif")
+screen.bgpic("./images/background.gif")
 
 
 food = Food()
 snake = Snake()
 scoreboard = Scoreboard()
 
+# Controls
 
 screen.listen()
 
@@ -31,6 +34,8 @@ screen.onkey(snake.down, "s")
 screen.onkey(snake.left, "a")
 screen.onkey(snake.right, "d")
 
+
+# Task while game is on 
 
 game_is_on = True 
 
